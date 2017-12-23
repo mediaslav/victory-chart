@@ -96,3 +96,14 @@ typings/
 /test/
 /perf/
 /demo/
+/.eslintignore
+/.npmignore.publishr
+/.eslintrc.js
+/.editorconfig
+/.gitignore
+/.builderrc
+/.travis.yml
+/CHANGELOG.md
+/package-lock.json
+/.lankrc.js
+/.babelrc
