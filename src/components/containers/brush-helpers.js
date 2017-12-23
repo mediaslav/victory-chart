@@ -5,12 +5,13 @@ import { attachId } from "../../helpers/event-handlers";
 const Helpers = {
   withinBounds(point, bounds, padding) {
     const { x1, x2, y1, y2 } = bounds;
-    const { x, y } = point;
+    const x = Number(point.x);
+    const y = Number(point.y);
     padding = padding ? padding / 2 : 0;
-    return +x + padding >= Math.min(x1, x2) &&
-      +x - padding <= Math.max(x1, x2) &&
-      +y + padding >= Math.min(y1, y2) &&
-      +y - padding <= Math.max(y1, y2);
+    return x + padding >= Math.min(x1, x2) &&
+      x - padding <= Math.max(x1, x2) &&
+      y + padding >= Math.min(y1, y2) &&
+      y - padding <= Math.max(y1, y2);
   },
 
   getDomainBox(props, fullDomain, selectedDomain) {
